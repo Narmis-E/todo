@@ -28,7 +28,7 @@
 using namespace std;
 namespace fs = std::experimental::filesystem;
 
-string path = "$HOME/"; //your path here!!
+string path = "Your Desired Todo Item Dir Here!";
 
 void editItem() {
     for (const auto & entry : fs::directory_iterator(path))
