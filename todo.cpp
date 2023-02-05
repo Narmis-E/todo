@@ -1,5 +1,4 @@
 #include <cstdlib>
-#include <curses.h>
 #include <iostream>
 #include <string>
 #include <fstream>
