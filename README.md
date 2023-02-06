@@ -11,11 +11,7 @@ It displays current todo items, and also checks to see if there are none left:
 ![](https://github.com/Narmis-E/todo/blob/main/images/todo-nothing.png)
 
 
-make sure to install the
-```
-ncurses-\
-```
-library. Everything else should be standard.
+Make sure to install the ncurses library (ncurses-base on fedora). Everything else should be standard.
 
 Also make sure to compile with the libraries linked:
 ```
