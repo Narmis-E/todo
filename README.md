@@ -6,4 +6,5 @@ Note: Cannot be compiled as is, you must add a directory for todo items to be st
 
 ![](https://github.com/Narmis-E/todo/blob/main/images/todo.png)
 It displays current todo items, and also checks to see if there are none left:
+
 ![](https://github.com/Narmis-E/todo/blob/main/images/todo-nothing.png)
