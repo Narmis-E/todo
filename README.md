@@ -10,6 +10,7 @@ It displays current todo items, and also checks to see if there are none left:
 
 ![](https://github.com/Narmis-E/todo/blob/main/images/todo-nothing.png)
 
-Limitations:
+### Limitations:
+
 $EDITOR is used for the editing function, so make sure to have it defined inside your current session!
 As my c++ knowledge is fairly basic, the creation and deletion of items in done through parsing commands into the shell, however I might be able to improve it in some other way. 
