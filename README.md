@@ -1,4 +1,4 @@
-#A Simple Todo TUI Written in C++
+# A Simple Todo TUI Written in C++
 
 This program allows the creation, deletion and modification of todo items inside the terminal.
 
