@@ -11,6 +11,17 @@ It displays current todo items, and also checks to see if there are none left:
 ![](https://github.com/Narmis-E/todo/blob/main/images/todo-nothing.png)
 
 
+make sure to install the
+```
+ncurses-\
+```
+library. Everything else should be standard.
+
+Also make sure to compile with the libraries linked:
+```
+g++ todo.cpp -o todo -lstdc++fs -lncurses
+```
+
 
 You can print todo items on startup by using the following script (add your item path):
 ```
