@@ -13,12 +13,13 @@ It displays current todo items, and also checks to see if there are none left:
 
 
 You can print todo items on startup by using the following script (add your item path):
-
-` #!/usr/bin/env zsh
+```
+#!/usr/bin/env zsh
 
 todo=$(awk '{print}END{print "\n"}' PATH_TO_ITEMS*)
 
-`notify-send TODO: $todo
+notify-send TODO: $todo
+```
 
 ### Current Limitations:
 
