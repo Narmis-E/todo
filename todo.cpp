@@ -27,7 +27,7 @@
 using namespace std;
 namespace fs = std::experimental::filesystem;
 
-string path = "/home/narmis/programs/c++/todo/items/";
+string path = "Your Desired Todo Item Dir Here!";
 
 void editItem() {
     for (const auto & entry : fs::directory_iterator(path))
@@ -54,7 +54,7 @@ void delItem() {
         getline(cin, itemDeletion);
         string delPath = path + itemDeletion;
         if (bool exist = fs::exists(delPath) == 0) {
-            cout << BOLDRED << itemDeletion <<" could not be deleted (might not exist)\n\n" << RESET;
+            cout << RED << itemDeletion <<" could not be deleted (might not exist)\n\n" << RESET;
             sleep(1);
         } else {
             system(("rm "+delPath+"").c_str());
@@ -80,7 +80,7 @@ void makeItem() {
     getline(cin, itemName);
     string itemPath = path + itemName;
     if (bool exist = fs::exists(itemPath) == 1) {
-        cout << BOLDRED << itemPath << " already exists!\n" << RESET;
+        cout << RED << itemPath << " already exists!\n" << RESET;
         sleep(1);
     } else {
         ofstream item;
@@ -108,7 +108,7 @@ void menu() {
         system(("find "+path+" -type f -print0 | xargs -0 tail -n +1").c_str());
             
     } else if (emptyDir == 1) { 
-        cout << BOLDRED << "Nothing Todo!\n" << RESET;
+        cout << RED << "Nothing Todo!\n" << RESET;
     }
     cout << GREEN << "\nm" << RESET << ": Make a new todo item \n"
     << RED << "d" << RESET << ": Delete a todo item \n"
@@ -130,7 +130,7 @@ void menu() {
                 editItem();
                 break;
             default:
-                cout << BOLDRED << "Enter [m] [d] [e]\n" << RESET;
+                cout << RED << "Enter [m] [d] [e]\n" << RESET;
                 break;
         }
     }
